@@ -1,0 +1,373 @@
+.titulo{
+    text-align: center;
+    color: darkblue;
+}
+
+header{
+    padding: 20px 0;
+}
+
+.logo{
+    position: relative;
+    margin: 0 auto;
+}
+
+.cuerpo{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 0 50px 50px;
+}
+
+.cuerpo li{
+    display: inline-block;
+    
+
+}
+
+.textoIngresado{
+    width: 40%;
+    margin: 0 1.5% 0 0;
+    padding: 0 60px 0 0;
+    
+}
+
+.advertencia:before{
+    content: "⚠";
+    color: gray;
+}
+
+.advertencia{
+    color: gray;
+    text-align: center;
+}
+
+.textoSalida{
+    width: 30% ;
+    margin: 0 1.5%;
+    padding: 30px 80px;
+    font-size: 20px;
+    vertical-align: top;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 30px;
+        
+
+}
+
+.pantallaTexto{
+    font-size: 15px;
+    color: rgb(126, 126, 126);
+    display: block;
+    width: 90%;
+    padding: 0 0 0 0;
+    
+}
+
+.mono{
+    padding: 0 0 0 10px;
+}
+
+.primerMensaje{
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    color: darkblue;
+    margin: 0 0 20px 0;
+}
+
+.segundoMensaje{
+    text-align: center;
+    font-size: 18px;
+    color: darkblue;
+}
+
+.palabra{
+    border: none;
+    font-size:30px;
+    box-sizing: content-box;
+    /*overflow: scroll;*/
+    resize: none;
+    color: darkblue;
+    
+}
+
+.palabra::placeholder{
+    text-align: center;
+    color: darkblue;
+    
+}
+
+.palabra:focus{
+    outline:none;
+}
+
+.botones{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 50px 3px 0 0;
+}
+
+.botonEncriptar, .botonDesencriptar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 14px;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 0 20px 10px 20px;
+}
+
+.botonEncriptar{
+    background: darkblue;
+    color: white;
+    border: none;
+    
+}
+
+.botonDesencriptar{
+    background: white;
+    color: blue;
+    border-width: 1px;
+    border-color: darkblue;
+    
+}
+
+.botonEncriptar:hover{
+    background: rgb(1, 1, 87);
+    transform: scale(1.2);
+}
+
+.botonDesencriptar:hover{
+    background: rgb(204, 194, 194);
+    transform: scale(1.2);
+}
+
+.botoncopiar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 14px;
+    border-radius: 15px;
+    transition: 1s all;
+    cursor: pointer;
+    margin: 50px 20px 10px 150px;
+    background: white;
+    color: blue;
+    border-width: 1px;
+    border-color: darkblue;
+    
+}
+
+.botoncopiar:hover{
+    background: rgb(204, 194, 194);
+    transform: scale(1.2);
+}
+
+#botoncopiar{
+    visibility: hidden;
+}
+
+footer{
+    background: darkblue;
+    padding: 100px 0 100px 0;
+}
+
+.listafooter{
+    width: 1280px;
+}
+
+.nombre{
+    width: 50%;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    vertical-align: top;
+    margin: 60px 0 0 50px;
+}
+
+.redestexto{
+    width: 45%;
+    color: white;
+    font-size: 25px;
+    display: inline-block;
+    margin: 0 0 0 0;
+}
+
+
+
+.linkedin{
+    width: 4%;
+    height: 4%;
+    margin: 4% 0 2% 30%;
+}
+
+.face{
+    width: 4%;
+    height: 4%;
+    margin: 2% 0 2% 30%;
+}
+
+@media screen and (max-width:1024px){
+    header{
+        width: 900px;
+        
+    }
+
+    nav{
+        text-align: center;
+        left: 350px;
+    }
+
+    .cuerpo{
+        width: 900px;
+    }
+
+    .textoIngresado{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+        height: 300px;
+    }
+    
+    .textoSalida{
+        width: 100% ;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        font-size: 20px;
+        vertical-align: top;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 30px;
+    }
+
+    .mono{
+        display: none;
+    }
+
+    footer{
+        width: 1024px;
+    }
+
+    .listafooter{
+        width: 1024px;
+    }
+
+    .nombre{
+        width: 40%;
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 60px 0 0 50px;
+    }
+    
+    .redestexto{
+        width: 45%;
+        color: white;
+        font-size: 20px;
+        display: inline-block;
+        margin: 0 0 0 70px;
+    }
+    
+    
+    
+    .linkedin{
+        width: 6%;
+        height: 6%;
+        margin: 8% 0 4% 25%;
+    }
+    
+    .face{
+        width: 6%;
+        height: 6%;
+        margin: 4% 0 4% 25%;
+    }
+}
+
+@media screen and (max-width:500px){
+    header{
+        width: 450px;
+        
+    }
+
+    nav{
+        text-align: center;
+        left: 100px;
+    }
+
+    .cuerpo{
+        width: 400px;
+    }
+
+    .textoIngresado{
+        width: 100%;
+    }
+
+    textarea{
+        width: 100%;
+        height: 300px;
+    }
+
+    .botones{
+        display: block;
+        text-align: center;
+        width: 100%;
+        
+        margin: 0 1.5%;
+        padding: 50px 3px 0 0;
+    }
+
+    .botonEncriptar, .botonDesencriptar{
+        width: 60%;
+        padding: 15px 0;
+        font-size: 16px;
+        border-radius: 15px;
+        transition: 1s all;
+        cursor: pointer;
+        margin: 0 20px 10px 20px;
+    }
+
+    
+    .textoSalida{
+        width: 100% ;
+        margin: 0 1.5%;
+        padding: 30px 20px;
+        font-size: 20px;
+        vertical-align: top;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+        border-radius: 30px;
+    }
+
+    .mono{
+        display: none;
+    }
+
+    .listafooter{
+        width: 500px;
+    }
+
+    .redestexto{
+        width: 45%;
+        color: white;
+        font-size: 10px;
+        display: inline-block;
+        margin: 0 0 0 0;
+    }
+    
+    
+    
+    .linkedin{
+        width: 6%;
+        height: 6%;
+        margin: 3% 0 3% 25%;
+    }
+    
+    .face{
+        width: 6%;
+        height: 6%;
+        margin: 3% 0 3% 25%;
+    }
+}
+
